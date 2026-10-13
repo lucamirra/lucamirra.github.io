@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it" translate="no">
+<head>
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMwRjJCM0MiLz48bGluZSB4MT0iMjAiIHkxPSIxMyIgeDI9IjIwIiB5Mj0iNTEiIHN0cm9rZT0iIzVCOERCOCIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxsaW5lIHgxPSIyMCIgeTE9IjEzIiB4Mj0iNDUiIHkyPSIzMiIgc3Ryb2tlPSIjNUI4REI4IiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGxpbmUgeDE9IjIwIiB5MT0iMzIiIHgyPSI0NSIgeTI9IjMyIiBzdHJva2U9IiNGMjY0MzAiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48Y2lyY2xlIGN4PSI0NSIgY3k9IjMyIiByPSIxMiIgZmlsbD0iI0YyNjQzMCIgZmlsbC1vcGFjaXR5PSIuMjUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjEzIiByPSI2IiBmaWxsPSIjOEZCOERFIi8+PGNpcmNsZSBjeD0iMjAiIGN5PSIzMiIgcj0iNyIgZmlsbD0iIzhGQjhERSIvPjxjaXJjbGUgY3g9IjIwIiBjeT0iNTEiIHI9IjYiIGZpbGw9IiM4RkI4REUiLz48Y2lyY2xlIGN4PSI0NSIgY3k9IjMyIiByPSI4IiBmaWxsPSIjRjI2NDMwIi8+PC9zdmc+Cg==">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEHklEQVR4nLxXS2xbRRQ9854dx7WTODZ1bOfjpCmB4qYNKkRBDQ1QEB8JGhBSFvy6KOxZgliwZMee3wIJBEKCoqLCphKiCqpABNMWq6JJY1wax87fn9TfGe48x64t+zlJa/dI1ty5975375s5c33HgHL0j9ja91jeBsMYzUYYmBMNgICI0uAn4UJsM/khgv71oo0VhfYHjj5LwyeMMQ+aCCHEAg2nYoHpH0sJtPseeZpB/Ql3EZTIczIJ1jE83iny+JsxuGs5djq6sG/Ip8nzswGsLi2iESisBB82iJx4gymsZvBDR47ixNQpqKqqzTnnOP3Vx7j4xzTuFHKrBVdeV7YIVxOPHn++FFxCURRN1zBQbAORQDeBTvs9O9LdfnyM0Qowr57D2upylS6VycLYugeNyYB5lXr28+fOIJ/Pl+ZcCETX4piYfBM2Zw8aAbXV2fe+njESvo5LMxdg7xnCyvo6vvzoA2zE43B2D6Jn/zA4JbcW/Q93AsN2DmsrEYQjUU1ejYYLv/C/GJmYxIGHj8Ph8mLm5++Qy6ZhpFLnNnF0EG/NisBNzrBBCxhOK8jeqnkVqLsCRQz4RrUxGPhNG5OxVYSvBeBwe2F39cEzeBDq8jwGWAw2I0MLbazCCmM7faLTyJHj9Bxnu0/A5fHi8OgxtFmtWA7PIxErlPFsJoXQP3/BRITsdbrwULcD5vwmXjJHcNKVxatdWUzY8uhu4Zi7qcBK520jC2REZRKswzcu9II/8czLOPbUCxU6ScxzZ7+5pSBiPnlvHw4eHsUrS2fhyi5VvWeWEnjvWguSeQZ/QpHsL9l0T4G7t78quIQsRN5995XmVlUgGQ2Cz5yuGVxiv5njkJXDrBb8y6FLQu/AkJ4J7xzxwN7q1+QWxtGqMNiNKdSDxyTo6wELJZDgO0igHvrNAr6OrfpAW1C+pLuFbgILoXndh9765QZCQasmWxWOYavAiDWPd70Z3WcW0oUkJQ/KocuBUPAqrlyeqdJLnbQVEacXJnLARSKXJFstzG4yzZ7IF/zLUfcUSHT3DeKxEyc1+fyZzyuCF2FRJMmEthpTzpxGOIdRYCVbCPx11KAFvpRUqBZUJrktB26E5rCwGNHkWsEl5EujGfo8qjyfLrbU9AlnUBV8RwnsFHMpFaHU7kvxtgnIlszdVWiO7XtddVsyGSSUVrEb1OVAM1uyIur2A01vyeQ76dIQ0TM2uyWTseU/g1/PoVZLVkt3+2B+quLQTaCqJSMOSF3DwlNs1nr/WL9JNfxJc1stp2ZdTAjr6XzuQe1wth0Yf5H49S3uIrjgk/HAr99rFM8sh66Y9vbKfutxurG0oYnYupxOUfAf5Lx0xtJL12fTFsdnJqMxQ5uTJlUbXc8taAC2rufTJHxB1/PX0ld/v1y0/Q8AAP//edCH2gAAAAZJREFUAwBeE6Umgq3DhwAAAABJRU5ErkJggg==">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>Privacy e cookie · AI per Professionisti</title>
+<meta name="description" content="Informativa sul trattamento dei dati personali e sui cookie del sito lucamirra.it, serie AI per Professionisti.">
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#0F2B3C; --navy-m:#1A3F56; --teal:#1B9AAA; --teal-d:#147885; --orange:#F26430; --slate:#2C3E50; --cream:#FAFBFC; --gray-l:#F1F3F5; --gray-m:#DEE2E6; --gray-d:#5B6670; --font-h:'Outfit', system-ui, sans-serif; --font-b:'DM Sans', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--slate); font-family: var(--font-b); font-size: 1.0625rem; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  h1, h2 { font-family: var(--font-h); line-height: 1.2; color: var(--navy); letter-spacing: -0.01em; }
+  a { color: var(--teal-d); }
+  a:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+  .testata { background: var(--navy); }
+  .testata div, main, footer div { max-width: 52rem; margin: 0 auto; padding-left: 1.25rem; padding-right: 1.25rem; }
+  .testata div { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem 2rem; padding-top: .9rem; padding-bottom: .9rem; }
+  .marchio { display: flex; flex-direction: column; text-decoration: none; font-family: var(--font-h); }
+  .marchio b { font-weight: 700; font-size: 1.15rem; color: #fff; letter-spacing: -.01em; line-height: 1.15; }
+  .marchio small { font-weight: 600; font-size: .64rem; color: #22B8CC; letter-spacing: .09em; text-transform: uppercase; }
+  .torna { text-decoration: none; color: #fff; background: var(--orange); padding: .45rem .95rem; border-radius: 8px; font-family: var(--font-h); font-weight: 600; font-size: .9rem; }
+  .torna:hover { background: #FF7B4A; }
+  main { padding-top: 2.6rem; padding-bottom: 3rem; }
+  .foglio { background: #fff; border: 1px solid var(--gray-m); border-radius: 14px; padding: 2.2rem 2.4rem 2.4rem; box-shadow: 0 2px 24px rgba(15,43,60,.06); }
+  h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); margin: 0 0 .4rem; }
+  .agg { color: var(--gray-d); font-size: .92rem; margin: 0 0 1.6rem; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; padding-top: 1.1rem; border-top: 1px solid var(--gray-l); }
+  p { margin: 0 0 .9em; }
+  ul { margin: 0 0 .9em; padding-left: 1.2rem; }
+  li { margin-bottom: .35em; }
+  .sintesi { background: var(--gray-l); border-left: 4px solid var(--teal); border-radius: 0 10px 10px 0; padding: 1rem 1.2rem; margin: 0 0 1rem; }
+  .sintesi p:last-child { margin-bottom: 0; }
+  footer { font-size: .88rem; color: rgba(255,255,255,.6); padding: 1.4rem 0 2.2rem; background: var(--navy); }
+  footer p { margin: 0 0 .4em; }
+  footer a { color: #22B8CC; }
+  @media (max-width: 760px) { .foglio { padding: 1.4rem 1.15rem 1.6rem; } main { padding-top: 1.6rem; } }
+</style>
+</head>
+<body>
+<header class="testata"><div>
+  <a class="marchio" href="/"><b>Luca Mirra</b><small>AI per Professionisti</small></a>
+  <a class="torna" href="/">← Torna al sito</a>
+</div></header>
+<main>
+<article class="foglio">
+<h1>Privacy e cookie</h1>
+<p class="agg">Informativa ai sensi degli articoli 13 e 14 del Regolamento (UE) 2016/679 (GDPR). Ultimo aggiornamento: ottobre 2026.</p>
+
+<div class="sintesi">
+<p><strong>In breve.</strong> Questo sito presenta la serie di manuali «AI per Professionisti». Non vende nulla direttamente e non raccoglie dati di pagamento. Ti chiede l'indirizzo email soltanto se scegli di ricevere il Protocollo gratuito e gli avvisi sulle nuove uscite. Conta le visite con Google Analytics solo se dai il consenso dal banner. Non fa profilazione pubblicitaria e non cede i tuoi dati a terzi per finalità commerciali.</p>
+</div>
+
+<h2>1. Titolare del trattamento</h2>
+<p>Il titolare del trattamento è Luca Mirra, Torino (Italia). Per qualsiasi richiesta relativa ai dati personali puoi scrivere a <a href="mailto:info@lucamirra.it">info@lucamirra.it</a>.</p>
+<p>Questa informativa riguarda il sito <strong>lucamirra.it</strong> nella parte dedicata alla serie «AI per Professionisti», compresa la pagina di download del Prompt Kit, e i contatti che ne derivano. Le sezioni del sito dedicate ad altri servizi hanno una propria informativa.</p>
+
+<h2>2. Quali dati trattiamo</h2>
+<p><strong>Dati di navigazione.</strong> I sistemi che fanno funzionare il sito acquisiscono, nel loro normale esercizio, alcuni dati la cui trasmissione è implicita nell'uso di Internet: indirizzo IP, tipo di browser e di dispositivo, pagina richiesta, data e ora della richiesta, esito della risposta del server. Non li raccogliamo per identificare i visitatori e non li incrociamo con altre informazioni: servono a far funzionare il sito e a garantirne la sicurezza.</p>
+<p><strong>Dati forniti con il modulo di iscrizione.</strong> Se compili il modulo per ricevere il Protocollo gratuito, trattiamo l'indirizzo email e gli eventuali altri dati richiesti dal modulo, insieme alla data dell'iscrizione.</p>
+<p><strong>Dati forniti scrivendoci.</strong> Se ci contatti per email, per esempio per chiedere una consulenza o assistenza su un volume, riceviamo i dati che ci comunichi: nome e cognome, studio o organizzazione di appartenenza, indirizzo email e contenuto del messaggio. Ti chiediamo di non inviarci dati non necessari e, in particolare, di non inviarci dati dei tuoi clienti né dati appartenenti a categorie particolari (salute, opinioni politiche, convinzioni religiose e simili).</p>
+<p><strong>Dati statistici sulle visite.</strong> Solo se acconsenti, Google Analytics raccoglie informazioni sull'uso del sito: pagine visitate, durata della visita, provenienza, tipo di dispositivo, area geografica approssimativa.</p>
+<p><strong>Acquisti.</strong> I volumi si acquistano sui negozi online che li distribuiscono, non su questo sito. I dati di acquisto e di pagamento sono trattati da quei negozi, in qualità di titolari autonomi, secondo le rispettive informative.</p>
+
+<h2>3. Perché li trattiamo e su quale base</h2>
+<ul>
+<li><strong>Inviarti il Protocollo gratuito e gli avvisi sulle nuove uscite</strong> della serie: il trattamento si basa sul tuo consenso, che dai compilando il modulo (art. 6, par. 1, lett. a, GDPR). Puoi revocarlo in ogni momento con il link di disiscrizione presente in ogni email.</li>
+<li><strong>Rispondere alle tue richieste</strong> di informazioni, assistenza o consulenza: il trattamento è necessario per dare seguito a misure precontrattuali adottate su tua richiesta (art. 6, par. 1, lett. b, GDPR).</li>
+<li><strong>Eseguire un eventuale incarico di consulenza</strong> e adempiere agli obblighi amministrativi, contabili e fiscali che ne derivano (art. 6, par. 1, lett. b e c, GDPR).</li>
+<li><strong>Misurare le visite al sito</strong> in forma aggregata: il trattamento si basa sul tuo consenso, che dai dal banner (art. 6, par. 1, lett. a, GDPR).</li>
+<li><strong>Far funzionare il sito e proteggerlo</strong> da usi illeciti: legittimo interesse del titolare (art. 6, par. 1, lett. f, GDPR).</li>
+</ul>
+<p>Non cediamo i tuoi dati a terzi per finalità commerciali e non svolgiamo profilazione né processi decisionali automatizzati.</p>
+
+<h2>4. Cookie e strumenti simili</h2>
+<p><strong>Strumenti tecnici.</strong> Il fornitore che distribuisce il sito può impostare cookie strettamente tecnici, necessari alla sicurezza e al corretto instradamento del traffico. Il sito memorizza inoltre nel tuo browser la scelta che fai sul banner, per non riproportelo a ogni visita: la scelta resta valida per sei mesi. Questi strumenti non richiedono consenso.</p>
+<p><strong>Cookie statistici.</strong> Il sito usa Google Analytics 4, un servizio di Google Ireland Limited, per contare le visite. Il servizio si attiva, e installa i propri cookie (per esempio «_ga»), soltanto dopo che hai scelto «Accetta» sul banner. Se scegli «Rifiuta», o non scegli nulla, non viene caricato.</p>
+<p><strong>Come cambiare idea.</strong> Puoi modificare la tua scelta in ogni momento dal link «Preferenze cookie» in fondo alla pagina principale, oppure <a href="/#cookie">da qui</a>. Puoi anche cancellare o bloccare i cookie dalle impostazioni del browser; il sito continuerà a funzionare.</p>
+<p><strong>Risorse caricate da terzi.</strong> Per mostrare i caratteri tipografici il sito li richiede ai server di Google (Google Fonts), e per mostrare il modulo di iscrizione carica uno script di MailerLite. In entrambi i casi il tuo browser comunica a quei fornitori l'indirizzo IP e i dati tecnici della richiesta. Lo script di MailerLite può usare strumenti tecnici necessari al funzionamento del modulo.</p>
+<p>Il sito non usa cookie di profilazione pubblicitaria.</p>
+
+<h2>5. A chi comunichiamo i dati</h2>
+<p>I dati sono trattati da Luca Mirra e, nei limiti di quanto necessario, da fornitori che operano come responsabili del trattamento o come titolari autonomi:</p>
+<ul>
+<li>fornitore di hosting e di distribuzione dei contenuti del sito (Netlify);</li>
+<li>MailerLite, il servizio che gestisce il modulo di iscrizione e l'invio delle email;</li>
+<li>Google Ireland Limited, per Google Analytics (solo con il tuo consenso) e Google Fonts;</li>
+<li>fornitori del servizio di posta elettronica;</li>
+<li>professionisti e consulenti (commercialista, consulente legale), tenuti alla riservatezza;</li>
+<li>autorità pubbliche, nei soli casi previsti dalla legge.</li>
+</ul>
+<p>I dati non vengono diffusi.</p>
+
+<h2>6. Trasferimenti fuori dall'Unione europea</h2>
+<p>Alcuni dei fornitori indicati hanno sede o infrastrutture negli Stati Uniti. In questi casi il trasferimento avviene sulla base delle garanzie previste dal Capo V del GDPR: la decisione di adeguatezza relativa all'EU-US Data Privacy Framework, quando il fornitore vi aderisce, oppure le clausole contrattuali standard approvate dalla Commissione europea.</p>
+
+<h2>7. Per quanto tempo li conserviamo</h2>
+<ul>
+<li><strong>Iscrizione alle email:</strong> fino alla disiscrizione o alla revoca del consenso.</li>
+<li><strong>Richieste di informazioni</strong> che non portano a un incarico: fino a 24 mesi dall'ultimo contatto, salvo tua richiesta di cancellazione anticipata.</li>
+<li><strong>Dati contrattuali e fiscali:</strong> 10 anni dalla conclusione del rapporto, come richiesto dalla normativa civilistica e tributaria.</li>
+<li><strong>Dati statistici:</strong> per il periodo impostato in Google Analytics, in ogni caso non oltre 14 mesi.</li>
+<li><strong>Dati di navigazione:</strong> per il tempo tecnico stabilito dai fornitori del servizio, di norma non oltre alcune settimane.</li>
+</ul>
+
+<h2>8. I tuoi diritti</h2>
+<p>In qualità di interessato puoi chiedere in ogni momento di accedere ai tuoi dati, di farli rettificare o cancellare, di limitarne il trattamento, di ricevere i dati in formato strutturato (portabilità) e di opporti al trattamento fondato sul legittimo interesse. Quando un trattamento si basa sul consenso, puoi revocarlo senza pregiudicare la liceità di quanto avvenuto prima.</p>
+<p>Per esercitare questi diritti basta scrivere a <a href="mailto:info@lucamirra.it">info@lucamirra.it</a>: rispondiamo entro un mese. Hai inoltre il diritto di proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">www.garanteprivacy.it</a>).</p>
+
+<h2>9. Obbligo di fornire i dati</h2>
+<p>Comunicarci i tuoi dati è facoltativo. Senza un indirizzo email, però, non possiamo inviarti il Protocollo gratuito né rispondere alle tue richieste. Il consenso ai cookie statistici è libero: se lo neghi, il sito funziona allo stesso modo.</p>
+
+<h2>10. Modifiche a questa informativa</h2>
+<p>Questa informativa può essere aggiornata, per esempio se cambiano i servizi utilizzati o la normativa. La versione in vigore è sempre quella pubblicata in questa pagina, con la data dell'ultimo aggiornamento indicata in alto.</p>
+</article>
+</main>
+<footer><div>
+  <p>© 2026 Luca Mirra, Torino. «AI per Professionisti» è una serie di manuali operativi sull'uso dell'intelligenza artificiale negli studi professionali.</p>
+  <p><a href="/privacy.html">Privacy e cookie</a> · <a href="/termini.html">Termini e condizioni</a> · <a href="/">Pagina principale</a></p>
+</div></footer>
+</body>
+</html>
