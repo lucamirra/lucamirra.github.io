@@ -548,6 +548,17 @@ footer ul a:hover { color:var(--teal-l); }
 }
 .cookie-azioni button:hover { background:var(--navy-m); border-color:var(--navy-m); }
 .cookie-azioni button:focus-visible, footer a:focus-visible { outline:3px solid var(--orange); outline-offset:2px; }
+
+/* ── Il mio percorso ── */
+.bio-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; margin-top:40px; align-items:start; }
+.bio-grid p { font-size:16px; color:var(--slate); line-height:1.75; margin-bottom:14px; }
+.tappe { list-style:none; border-left:2px solid var(--gray-m); padding-left:22px; }
+.tappe li { position:relative; padding:0 0 20px; }
+.tappe li::before { content:''; position:absolute; left:-29px; top:5px; width:12px; height:12px; border-radius:50%; background:var(--white); border:2px solid var(--teal); }
+.tappe .t-anni { font-family:var(--font-h); font-size:12px; font-weight:700; color:var(--teal); letter-spacing:1px; }
+.tappe .t-ruolo { font-family:var(--font-h); font-size:16px; font-weight:600; color:var(--navy); }
+.tappe .t-desc { font-size:14px; color:var(--gray-d); }
+@media(max-width:900px){ .bio-grid { grid-template-columns:1fr; gap:32px; } }
 </style>
 </head>
 <body>
@@ -557,7 +568,7 @@ footer ul a:hover { color:var(--teal-l); }
   <a href="#" class="nav-logo">
     <div class="nav-logo-text">
       <span class="nav-logo-name">Luca Mirra</span>
-      <span class="nav-logo-tag">AI Professional Network</span>
+      <span class="nav-logo-tag">Specialista di Processo AI</span>
     </div>
   </a>
   <div class="nav-links">
@@ -573,7 +584,7 @@ footer ul a:hover { color:var(--teal-l); }
   <div class="hero-inner">
     <div class="hero-text">
       <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(27,154,170,.15); border:1px solid rgba(27,154,170,.3); padding:6px 14px; border-radius:20px; margin-bottom:20px;">
-        <span style="font-family:var(--font-h); font-size:11px; font-weight:700; color:var(--teal-l); text-transform:uppercase; letter-spacing:1.5px;">Il Mio Metodo · Edizione 2026</span>
+        <span style="font-family:var(--font-h); font-size:11px; font-weight:700; color:var(--teal-l); text-transform:uppercase; letter-spacing:1.5px;">Luca Mirra · Specialista di Processo AI</span>
       </div>
       <h1>Non ti manca<br><span class="accent">il tempo.</span><br>Ti manca un sistema.</h1>
       <p class="hero-sub">Ogni settimana perdi molte ore in attività meccaniche che non richiedono la tua mente. Il problema non è la tua produttività: è che l'AI, senza un metodo di lavoro, rende molto meno di quanto potrebbe.</p>
@@ -756,6 +767,29 @@ footer ul a:hover { color:var(--teal-l); }
 </section>
 
 <!-- ─── CHI SONO ─── -->
+<!-- ─── IL MIO PERCORSO ─── -->
+<section class="sec" id="percorso" style="background:var(--cream);">
+  <div class="sec-in">
+    <div class="reveal center">
+      <p class="sec-label">Il mio percorso</p>
+      <h2 class="sec-title center">Un problem solver con esperienza industriale.</h2>
+    </div>
+    <div class="bio-grid">
+      <div class="reveal">
+        <p>Ho passato oltre 25 anni in operations e logistica, in multinazionali e PMI: dal magazzino al coordinamento di team fino a 80 persone, dalla pianificazione dei trasporti al lancio di un centro di distribuzione robotico.</p>
+        <p>Lì ho imparato che quasi sempre il problema non sono le persone, è il sistema in cui lavorano. Oggi applico la stessa logica con l'Intelligenza Artificiale: strumenti già esistenti e a basso costo, processi semplici che chi li usa capisce e controlla.</p>
+      </div>
+      <ul class="tappe reveal rd1">
+        <li><div class="t-anni">OGGI</div><div class="t-ruolo">Specialista di Processo AI</div><div class="t-desc">Workflow AI per professionisti, retail e studi medici. Autore della serie AI per Professionisti.</div></li>
+        <li><div class="t-anni">2019 – 2024</div><div class="t-ruolo">Specialista di Processo · Amazon Logistics</div><div class="t-desc">Problem solving sul flusso merci, fino a 3,38 milioni di unità a settimana.</div></li>
+        <li><div class="t-anni">2012 – 2018</div><div class="t-ruolo">Capo impianto e pianificazione trasporti</div><div class="t-desc">Kuehne+Nagel/Fiat, CEVA Logistics, So.co.fat, GTI Trasporti, Traccia Sistemi.</div></li>
+        <li><div class="t-anni">1993 – 2011</div><div class="t-ruolo">DHL Express</div><div class="t-desc">Dal magazzino al coordinamento logistico, poi Team Leader del call center.</div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
 <section class="sec" id="profilo" style="background:var(--white);">
   <div class="sec-in">
     <div class="reveal center">
@@ -811,9 +845,8 @@ footer ul a:hover { color:var(--teal-l); }
       <div class="consult-box">
         <p style="font-family:var(--font-h); font-size:11px; font-weight:700; color:var(--teal); text-transform:uppercase; letter-spacing:2px; margin-bottom:12px;">Consulenza 1-to-1 · Posti limitati</p>
         <h3>Lavoro solo con chi è pronto a cambiare sistema.</h3>
-        <p>Se hai letto fin qui e hai riconosciuto i tuoi pattern, probabilmente sei il tipo di professionista con cui lavoro. Non cerco chi vuole una scorciatoia. Cerco chi è disposto a fare una ristrutturazione operativa seria — e vuole farlo in modo guidato, non per tentativi.</p>
-        <p style="font-size:14px; color:var(--gray-d); margin-top:12px; margin-bottom:24px;">Scrivi una riga su dove sei bloccato. Se c'è un allineamento, ti rispondo personalmente.</p>
-        <a href="mailto:info@lucamirra.it" class="btn-consult">
+        <p>Se hai letto fin qui e hai riconosciuto i tuoi pattern, probabilmente sei il tipo di professionista con cui lavoro. Cerco chi è disposto a fare una ristrutturazione operativa seria — e vuole farlo in modo guidato, non per tentativi.</p>
+        <a href="mailto:info@lucamirra.it" class="btn-consult" style="margin-top:24px;">
           <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           Scrivimi: info@lucamirra.it
         </a>

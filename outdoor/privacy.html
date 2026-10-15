@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<!-- Google Analytics: si carica solo dopo il consenso dato dal banner in fondo alla pagina -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var LM_GA_ID = 'G-SCXFBN7CP0', LM_CHIAVE = 'lm-consenso-analitici', LM_DURATA = 180 * 24 * 60 * 60 * 1000;
+  function lmLeggiConsenso(){
+    try {
+      var v = JSON.parse(localStorage.getItem(LM_CHIAVE) || 'null');
+      if (v && (Date.now() - v.quando) < LM_DURATA) return v.scelta;
+    } catch(e) {}
+    return null;
+  }
+  function lmCaricaAnalytics(){
+    if (window.lmAnalyticsCaricato) return;
+    window.lmAnalyticsCaricato = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + LM_GA_ID;
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', LM_GA_ID);
+  }
+  if (lmLeggiConsenso() === 'si') lmCaricaAnalytics();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy e cookie · Luca Mirra Outdoor</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bosco:#14302A;--lago:#2BA7A0;--testo:#22312C;--pietra:#5E6A66;--linea:#DDE5E1;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;color:var(--testo);background:#F6F8F6;line-height:1.7}
+header{background:var(--bosco);color:#fff;padding:18px 16px}
+header div,main,footer div{max-width:820px;margin:0 auto}
+header div{display:flex;justify-content:space-between;align-items:center;gap:12px}
+header a{color:#fff;text-decoration:none;font-family:'Outfit',sans-serif;font-weight:700}
+main{padding:40px 16px 56px}
+h1{font-family:'Outfit',sans-serif;font-size:34px;color:var(--bosco)}
+h2{font-family:'Outfit',sans-serif;font-size:20px;color:var(--bosco);margin:30px 0 8px}
+p,li{font-size:16px;margin-top:10px} ul{padding-left:22px}
+.agg{color:var(--pietra);font-size:14px}
+.sintesi{margin-top:22px;padding:18px 20px;background:#fff;border:1px solid var(--linea);border-left:4px solid var(--lago);border-radius:var(--r)}
+a{color:#16716B}
+footer{background:#0C1E1A;color:#8FA59E;font-size:13px;padding:24px 16px}
+footer a{color:#B9CBC4}
+.cookie-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:200;max-width:720px;margin:0 auto;background:#fff;border:1px solid var(--linea);border-radius:var(--r);box-shadow:0 12px 40px rgba(20,48,42,.22);padding:20px 22px}
+.cookie-banner[hidden]{display:none} .cookie-banner p{font-size:14px;margin:0 0 14px}
+.cookie-azioni{display:flex;gap:10px;flex-wrap:wrap}
+.cookie-azioni button{font-family:'Outfit',sans-serif;font-weight:600;font-size:14px;padding:10px 20px;border-radius:8px;border:1.5px solid var(--bosco);background:var(--bosco);color:#fff;cursor:pointer}
+</style>
+</head>
+<body>
+<header><div><a href="./">Luca Mirra · Outdoor</a><a href="./">← Torna alla pagina</a></div></header>
+<main>
+<h1>Privacy e cookie</h1>
+<p class="agg">Informativa ai sensi degli articoli 13 e 14 del Regolamento (UE) 2016/679 (GDPR). Ultimo aggiornamento: ottobre 2026.</p>
+<div class="sintesi"><p style="margin:0"><strong>In breve.</strong> Questa pagina presenta le mie attività outdoor: Nordic Walking, orientamento, escursionismo e survival. Non contiene moduli e non raccoglie dati di pagamento. Conta le visite con Google Analytics solo se dai il consenso dal banner. Tratto i dati che mi fornisci quando mi scrivi per email o WhatsApp, solo per risponderti.</p></div>
+
+<h2>1. Titolare del trattamento</h2>
+<p>Il titolare del trattamento è Luca Mirra, Torino (Italia). Per qualsiasi richiesta relativa ai dati personali puoi scrivere a <a href="mailto:info@lucamirra.it">info@lucamirra.it</a> o al numero 349 6053981.</p>
+<p>Questa informativa riguarda la pagina <strong>lucamirra.it/outdoor</strong> e i contatti che ne derivano. Le altre sezioni del sito lucamirra.it hanno una propria informativa.</p>
+
+<h2>2. Quali dati tratto</h2>
+<p><strong>Dati di navigazione.</strong> I sistemi che fanno funzionare il sito acquisiscono, nel loro normale esercizio, alcuni dati la cui trasmissione è implicita nell'uso di Internet: indirizzo IP, tipo di browser e di dispositivo, pagina richiesta, data e ora. Servono a far funzionare il sito e a garantirne la sicurezza, non a identificare i visitatori.</p>
+<p><strong>Dati forniti scrivendomi.</strong> Se mi contatti per email o WhatsApp, ricevo i dati che mi comunichi: nome, eventuale associazione o ente di appartenenza, recapiti e contenuto del messaggio. Ti chiedo di non inviarmi dati non necessari, in particolare dati sulla salute: se servono per partecipare a un'attività, ne parliamo di persona.</p>
+<p><strong>Dati statistici sulle visite, solo con il tuo consenso.</strong> Google Analytics raccoglie informazioni sull'uso della pagina: pagine visitate, durata, provenienza, tipo di dispositivo, area geografica approssimativa.</p>
+<p><strong>Foto e video.</strong> Le immagini pubblicate sono state scattate durante uscite e corsi. Se compari in una foto e preferisci che venga tolta o che il tuo volto venga reso irriconoscibile, scrivimi: provvedo senza bisogno di motivazioni.</p>
+
+<h2>3. Perché li tratto e su quale base</h2>
+<ul>
+<li><strong>Rispondere alle tue richieste</strong> e organizzare corsi, uscite o collaborazioni: misure precontrattuali adottate su tua richiesta (art. 6, par. 1, lett. b, GDPR).</li>
+<li><strong>Eseguire un incarico</strong> e adempiere agli obblighi amministrativi e fiscali che ne derivano (art. 6, par. 1, lett. b e c, GDPR).</li>
+<li><strong>Misurare le visite</strong> in forma aggregata: consenso espresso dal banner (art. 6, par. 1, lett. a, GDPR), revocabile in ogni momento.</li>
+<li><strong>Far funzionare il sito e proteggerlo</strong> da usi illeciti: legittimo interesse del titolare (art. 6, par. 1, lett. f, GDPR).</li>
+</ul>
+<p>Non cedo i tuoi dati a terzi per finalità commerciali e non svolgo profilazione né processi decisionali automatizzati.</p>
+
+<h2>4. Cookie e strumenti simili</h2>
+<p><strong>Strumenti tecnici.</strong> Il fornitore che distribuisce il sito può impostare cookie strettamente tecnici, necessari alla sicurezza e all'instradamento del traffico. La pagina memorizza inoltre nel tuo browser la scelta fatta sul banner, per sei mesi. Questi strumenti non richiedono consenso.</p>
+<p><strong>Cookie statistici.</strong> La pagina usa Google Analytics 4 (Google Ireland Limited). Il servizio si attiva, e installa i propri cookie (per esempio «_ga»), soltanto se scegli «Accetta» sul banner. Se rifiuti, o non scegli, non viene caricato.</p>
+<p><strong>Come cambiare idea.</strong> Puoi modificare la scelta in ogni momento da <a href="#cookie" id="apri-cookie">Preferenze cookie</a>, o cancellare i cookie dalle impostazioni del browser.</p>
+<p><strong>Risorse di terzi.</strong> Per mostrare i caratteri tipografici la pagina li richiede ai server di Google (Google Fonts): il tuo browser comunica a Google l'indirizzo IP e i dati tecnici della richiesta. Foto e video sono ospitati sul sito stesso. I pulsanti di contatto aprono servizi esterni (posta elettronica, WhatsApp), che applicano le proprie condizioni.</p>
+
+<h2>5. A chi comunico i dati</h2>
+<ul>
+<li>fornitore di hosting e distribuzione del sito (Netlify);</li>
+<li>Google Ireland Limited, per Google Analytics (solo con consenso) e Google Fonts;</li>
+<li>WhatsApp (Meta Platforms Ireland Ltd), se scegli di scrivermi con questo canale;</li>
+<li>fornitori del servizio di posta elettronica;</li>
+<li>associazioni sportive o enti con cui organizzo un'attività a cui partecipi, solo per quanto necessario (per esempio per il tesseramento e l'assicurazione);</li>
+<li>professionisti e consulenti tenuti alla riservatezza; autorità pubbliche nei casi previsti dalla legge.</li>
+</ul>
+<p>I dati non vengono diffusi.</p>
+
+<h2>6. Trasferimenti fuori dall'Unione europea</h2>
+<p>Alcuni fornitori hanno sede o infrastrutture negli Stati Uniti. Il trasferimento avviene sulla base delle garanzie del Capo V del GDPR: la decisione di adeguatezza relativa all'EU-US Data Privacy Framework, quando il fornitore vi aderisce, oppure le clausole contrattuali standard della Commissione europea.</p>
+
+<h2>7. Per quanto tempo li conservo</h2>
+<ul>
+<li><strong>Richieste che non portano a un'attività:</strong> fino a 24 mesi dall'ultimo contatto, salvo tua richiesta di cancellazione anticipata.</li>
+<li><strong>Dati legati a incarichi e fatturazione:</strong> 10 anni, come richiesto dalla normativa civilistica e tributaria.</li>
+<li><strong>Dati statistici di Google Analytics:</strong> secondo le impostazioni del servizio, al massimo 14 mesi.</li>
+</ul>
+
+<h2>8. I tuoi diritti</h2>
+<p>Puoi chiedere in ogni momento di accedere ai tuoi dati, di rettificarli o cancellarli, di limitarne il trattamento, di riceverli in formato strutturato e di opporti al trattamento basato sul legittimo interesse. Se un trattamento si basa sul consenso puoi revocarlo, senza effetti su quanto avvenuto prima. Scrivi a <a href="mailto:info@lucamirra.it">info@lucamirra.it</a>: rispondo entro un mese. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">www.garanteprivacy.it</a>).</p>
+
+<h2>9. Modifiche</h2>
+<p>Questa informativa può essere aggiornata. La versione in vigore è sempre quella pubblicata qui, con la data indicata in alto.</p>
+</main>
+<footer><div>© 2026 Luca Mirra · Torino · <a href="./">Torna alla pagina Outdoor</a></div></footer>
+<!-- BANNER COOKIE -->
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Preferenze sui cookie" hidden>
+  <p>Questo sito usa cookie tecnici e, solo se acconsenti, Google Analytics per contare le visite in forma aggregata. Nessuna profilazione pubblicitaria. Dettagli nella pagina <a href="privacy.html">Privacy e cookie</a>.</p>
+  <div class="cookie-azioni">
+    <button type="button" id="cookie-no">Rifiuta</button>
+    <button type="button" id="cookie-si">Accetta</button>
+  </div>
+</div>
+<script>
+(function(){
+  var banner = document.getElementById('cookie-banner');
+  function salva(scelta){
+    try { localStorage.setItem(LM_CHIAVE, JSON.stringify({ scelta: scelta, quando: Date.now() })); } catch(e) {}
+    banner.hidden = true;
+    if (scelta === 'si') { lmCaricaAnalytics(); return; }
+    // Rifiuto: cancella gli eventuali cookie di Analytics già presenti
+    var domini = ['', '; domain=' + location.hostname, '; domain=.' + location.hostname.replace(/^www\./, '')];
+    document.cookie.split(';').forEach(function(c){
+      var nome = c.split('=')[0].trim();
+      if (nome.indexOf('_ga') === 0) domini.forEach(function(d){
+        document.cookie = nome + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + d;
+      });
+    });
+    if (window.lmAnalyticsCaricato) location.reload();
+  }
+  document.getElementById('cookie-si').addEventListener('click', function(){ salva('si'); });
+  document.getElementById('cookie-no').addEventListener('click', function(){ salva('no'); });
+  document.getElementById('apri-cookie').addEventListener('click', function(e){ e.preventDefault(); banner.hidden = false; });
+  if (lmLeggiConsenso() === null || location.hash === '#cookie') banner.hidden = false;
+  window.addEventListener('hashchange', function(){ if (location.hash === '#cookie') banner.hidden = false; });
+})();
+</script>
+
+
+
+
+</body>
+</html>
