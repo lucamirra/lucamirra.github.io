@@ -720,6 +720,35 @@ a.caso-visual:hover img{transform:scale(1.02)}
 .no li{position:relative;padding:7px 0 7px 32px;font-size:15.5px;color:#3A4B5C}
 .no li::before{content:'✕';position:absolute;left:2px;top:6px;color:#C8372D;font-weight:700}
 @media(max-width:900px){.tre,.due{grid-template-columns:1fr}}
+
+/* v4 */
+#nav{padding:0 72px 0 32px!important}
+#nav .nav-links{gap:30px}
+#nav .nav-links a{font-size:17px!important}
+.nav-logo-tag{font-size:12px!important}
+.pro-kicker{font-size:14px!important}
+.pro-libro{font-size:17px!important}
+.pro-sez .sec-label,.libri-box .sec-label{font-size:16px!important}
+.due-c .sec-label{font-size:16px!important}
+.caso{grid-template-columns:1fr 1.3fr!important;gap:44px!important}
+.divisore{max-width:1140px;margin:0 auto;border-top:1px solid #DDE3E8}
+.pro-btn.wa{padding:8px 20px}
+.wa-t{display:flex;flex-direction:column;line-height:1.15;text-align:left}
+.wa-t small{font-size:14px;font-weight:600;opacity:.95}
+.servizi{background:var(--cream)}
+.srv{background:#fff;border:1px solid var(--gray-m);border-radius:var(--radius);padding:28px 24px;box-shadow:var(--shadow)}
+.srv-n{font-family:var(--font-h);font-weight:800;font-size:30px;color:var(--orange)}
+.srv h3{font-family:var(--font-h);font-size:20px;color:var(--navy);margin:8px 0 6px}
+.srv p{font-size:15.5px;color:#46586A}
+.tools{margin-top:34px;text-align:center}
+.tools-t{font-family:var(--font-h);font-weight:700;font-size:15px;color:var(--navy);margin-bottom:12px}
+.tools-l{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.tools-l span{font-family:var(--font-h);font-weight:600;font-size:15px;color:var(--navy);background:#fff;border:1px solid var(--gray-m);padding:7px 15px;border-radius:999px}
+.tappe-pro{list-style:none;margin-top:18px;border-top:1px solid var(--gray-m)}
+.tappe-pro li{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--gray-m);font-size:15.5px;color:#3A4B5C}
+.tappe-pro b{font-family:var(--font-h);color:var(--teal);font-size:14px;text-transform:uppercase;letter-spacing:.8px;padding-top:2px}
+.chi-box{align-items:start!important}
+@media(max-width:900px){#nav{padding:0 20px!important}.caso{grid-template-columns:1fr!important}.tappe-pro li{grid-template-columns:1fr;gap:2px}}
 </style>
 </head>
 <body>
@@ -836,11 +865,32 @@ a.caso-visual:hover img{transform:scale(1.02)}
   </div>
 </section>
 
+<section class="pro-sez servizi" id="servizi">
+  <div class="sec-in">
+    <div class="reveal center">
+      <p class="sec-label">Cosa faccio</p>
+      <h2 class="sec-title center">Tre modi di lavorare insieme</h2>
+      <p class="sec-sub center">Niente software da sviluppare né automazioni complicate: strumenti AI che esistono già, scelti per il miglior rapporto tra costo e risultato, e messi al lavoro nei tuoi processi.</p>
+    </div>
+    <div class="tre reveal">
+      <div class="srv"><span class="srv-n">01</span><h3>Analisi e consulenza</h3><p>Individuo le attività ripetitive che ti tolgono tempo e scelgo dove l'AI rende davvero.</p></div>
+      <div class="srv"><span class="srv-n">02</span><h3>Workflow su misura</h3><p>Costruisco il flusso con istruzioni scritte e prompt pronti, che usi e controlli tu.</p></div>
+      <div class="srv"><span class="srv-n">03</span><h3>Supporto continuativo</h3><p>Per negozi e piccole imprese: un braccio destro digitale per cataloghi, contenuti e comunicazione.</p></div>
+    </div>
+    <div class="tools reveal">
+      <p class="tools-t">Gli strumenti che uso ogni giorno</p>
+      <div class="tools-l"><span>Claude</span><span>ChatGPT</span><span>Gemini</span><span>Perplexity</span><span>NotebookLM</span><span>Google AI Studio</span><span>Excel</span><span>Email marketing</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="divisore" aria-hidden="true"></div>
 <section class="pro-sez perchi" id="per-chi">
   <div class="sec-in">
     <div class="reveal center">
       <p class="sec-label">Per chi è</p>
       <h2 class="sec-title center">Lavoro con chi ha poco tempo e processi da sistemare</h2>
+      <p class="sec-sub center">Realtà piccole e medie dove poche persone fanno tutto: niente reparto IT, niente tempo per i corsi. Serve qualcuno che entri nel lavoro di tutti i giorni e lo renda più semplice.</p>
     </div>
     <div class="tre reveal">
       <div class="tre-c"><svg viewBox="0 0 48 48"><path d="M8 40V14l16-8 16 8v26z"/><path d="M18 40V28h12v12M16 18h4M28 18h4"/></svg><h3>Studi professionali</h3><p>Commercialisti, consulenti, medici.</p></div>
@@ -889,8 +939,14 @@ a.caso-visual:hover img{transform:scale(1.02)}
     <div class="reveal">
       <p class="sec-label">Chi sono</p>
       <h2 class="chi-tit">Luca Mirra</h2>
-      <p>Oltre 25 anni di operations e logistica in DHL, Amazon, CEVA e Kuehne+Nagel: dal magazzino al coordinamento di team fino a 80 persone.</p>
-      <p>Lì ho imparato che quasi sempre il problema non sono le persone, è il sistema in cui lavorano. Oggi applico la stessa logica con l'AI, per professionisti e piccole imprese.</p>
+      <p>Sono un problem solver con metodo. Oltre 25 anni di operations e logistica in DHL, Amazon, CEVA e Kuehne+Nagel: dal magazzino al coordinamento di team fino a 80 persone.</p>
+      <p>Lì ho imparato che quasi sempre il problema non sono le persone, è il sistema in cui lavorano. Oggi porto la stessa cultura dell'efficienza a professionisti e piccole imprese, con l'AI e senza tecnicismi.</p>
+      <ul class="tappe-pro">
+        <li><b>Oggi</b>Specialista di Processo AI: workflow per studi, negozi e servizi.</li>
+        <li><b>2019 – 2024</b>Specialista di Processo, Amazon Logistics: fino a 3,38 milioni di unità a settimana.</li>
+        <li><b>1993 – 2018</b>DHL Express, Kuehne+Nagel, CEVA Logistics: impianti, trasporti, team.</li>
+        <li><b>Formazione</b>Tecnico logistica e trasporti, Business Sales (Australia), Microsoft Office Specialist, specializzazione AI.</li>
+      </ul>
     </div>
   </div>
   <div class="sec-in">
@@ -901,7 +957,7 @@ a.caso-visual:hover img{transform:scale(1.02)}
       </div>
       <div class="pro-contatto-azioni">
         <a class="pro-btn" href="mailto:info@lucamirra.it?subject=Il%20mio%20processo">info@lucamirra.it</a>
-        <a class="pro-btn wa" href="https://wa.me/393496053981?text=Ciao%20Luca%2C%20vorrei%20parlarti%20di%20un%20processo%20di%20lavoro" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>349 605 3981</a>
+        <a class="pro-btn wa" href="https://wa.me/393496053981?text=Ciao%20Luca%2C%20vorrei%20parlarti%20di%20un%20processo%20di%20lavoro" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg><span class="wa-t">WhatsApp<small>349-6053981</small></span></a>
       </div>
     </div>
   </div>
