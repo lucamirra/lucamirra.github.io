@@ -13,7 +13,12 @@
 <meta property="og:title" content="Traccialog · Rilevamento e mappatura digitale di sentieri e cammini">
 <meta property="og:description" content="Segnavia, criticità e punti di interesse documentati con foto, video e coordinate GPS, in una mappa che si apre da qualsiasi browser.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://lucamirra.it/traccialog/img/hero-cartina.jpg">
+<meta property="og:url" content="https://lucamirra.it/traccialog/">
+<meta property="og:image" content="https://lucamirra.it/traccialog/img/og-traccialog.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preload" as="image" href="https://lucamirra.it/traccialog/img/hero-cartina.jpg">
 <style>
 @font-face{font-family:'Outfit';font-weight:400;font-display:swap;src:url('https://lucamirra.it/traccialog/fonts/outfit-latin-400-normal.woff2') format('woff2')}
@@ -189,7 +194,6 @@ section{padding:72px 0}
 
 /* VANTAGGI */
 .vantaggi{position:relative;background:var(--carta);overflow:hidden}
-.vantaggi::before{content:'';position:absolute;top:0;bottom:0;right:-4%;width:46%;background:url('https://lucamirra.it/traccialog/img/tronco-2.jpg') center/cover no-repeat;opacity:.13;filter:saturate(.7);-webkit-mask-image:radial-gradient(ellipse 70% 65% at 50% 40%,#000 25%,transparent 75%);mask-image:radial-gradient(ellipse 70% 65% at 50% 40%,#000 25%,transparent 75%);pointer-events:none}
 .vantaggi .wrap{position:relative;z-index:1}
 .cifra{margin-top:8px;max-width:820px;font-size:18px}
 .cifra strong{color:var(--criticita)}
@@ -240,6 +244,14 @@ footer .wrap{display:grid;gap:6px}
 footer a{color:#B9CBC4}
 .preferenze{background:none;border:0;padding:0;font:inherit;color:#B9CBC4;text-decoration:underline;cursor:pointer}
 
+
+/* fauna in trasparenza nelle sezioni chiare */
+.con-fauna{position:relative;overflow:hidden}
+.con-fauna>.wrap{position:relative;z-index:1}
+.fauna{position:absolute;top:0;bottom:0;width:48%;background:var(--fa) center/cover no-repeat;opacity:var(--fo,.18);pointer-events:none;filter:saturate(.75);z-index:0;
+  -webkit-mask-image:radial-gradient(ellipse 70% 65% at 50% 50%,#000 25%,transparent 75%);mask-image:radial-gradient(ellipse 70% 65% at 50% 50%,#000 25%,transparent 75%)}
+.fauna.dx{right:-4%}.fauna.sx{left:-4%}
+@media (max-width:900px){.fauna{width:100%;left:0;right:0;opacity:calc(var(--fo,.18)*.6)}}
 /* reveal */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
 .reveal.vis{opacity:1;transform:none}
@@ -298,7 +310,6 @@ footer a{color:#B9CBC4}
   .riga p.senza .et{color:#9A3B37}.riga p.con .et{color:#16716B}
   .chi-box{grid-template-columns:1fr;gap:24px;justify-items:start}
   .ritratto{width:220px;height:220px}
-  .vantaggi::before{width:100%;right:0;opacity:.08}
   .nuovo::after{background:linear-gradient(180deg,rgba(10,28,24,.72) 0%,rgba(10,28,24,.86) 100%)}
   .nuovo{padding:80px 0}
 }
@@ -439,7 +450,8 @@ var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.targe
 </script>
 
 <!-- DUE MAPPE -->
-<section class="mappe" id="prodotti">
+<section class="con-fauna mappe" id="prodotti">
+  <div class="fauna sx" style="--fa:url('https://lucamirra.it/traccialog/img/fauna-lupi.jpg');--fo:.22" aria-hidden="true"></div>
   <div class="wrap">
     <div class="reveal">
       <p class="label">Le due mappe</p>
@@ -505,10 +517,11 @@ var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.targe
   </div>
 </section>
 
-<div class="separatore sep3" aria-hidden="true"><img src="https://lucamirra.it/traccialog/img/bosco-muschio.jpg" alt="" loading="lazy"></div>
+
 
 <!-- METODO -->
-<section class="metodo" id="metodo">
+<section class="con-fauna metodo" id="metodo">
+  <div class="fauna dx" style="--fa:url('https://lucamirra.it/traccialog/img/fauna-branco.jpg');--fo:.22" aria-hidden="true"></div>
   <div class="wrap split">
     <figure class="foto-grande reveal"><img src="https://lucamirra.it/traccialog/img/metodo-carta.jpg" alt="Mani che tengono una bussola sopra una carta topografica, su un tavolo all'aperto davanti alle montagne" loading="lazy"></figure>
     <div class="reveal">
@@ -524,7 +537,7 @@ var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.targe
   </div>
 </section>
 
-<div class="separatore sep2" aria-hidden="true"><img src="https://lucamirra.it/traccialog/img/laghetto-cime.jpg" alt="" loading="lazy"></div>
+
 
 <!-- FORMULE -->
 <section class="formule-sez" id="formule">
@@ -566,7 +579,8 @@ var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.targe
 </section>
 
 <!-- VANTAGGI -->
-<section class="vantaggi" id="vantaggi">
+<section class="con-fauna vantaggi" id="vantaggi">
+  <div class="fauna dx" style="--fa:url('https://lucamirra.it/traccialog/img/fauna-lince.jpg');--fo:.22" aria-hidden="true"></div>
   <div class="wrap">
     <div class="reveal">
       <p class="label">Vantaggi operativi</p>
