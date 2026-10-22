@@ -186,7 +186,8 @@ section{padding:72px 0}
 .nuovo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 12%}
 .nuovo::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,28,24,.9) 0%,rgba(10,28,24,.75) 45%,rgba(10,28,24,.25) 100%)}
 .nuovo .wrap{position:relative;z-index:2}
-.nuovo .testo{max-width:600px}
+.nuovo .testo{max-width:760px}
+.nuovo p.nuovo-testo{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .nuovo .label{color:var(--segnaletica)}
 .nuovo h2{color:#fff}
 .nuovo p{font-size:16.5px;color:#E6EEEA;margin-top:12px}
@@ -232,6 +233,7 @@ section{padding:72px 0}
 .contatti h2{color:#fff}
 .contatti p{color:#C9D8D2;max-width:760px;margin:12px auto 0;font-size:16.5px}
 .contatti .azioni{justify-content:center}
+.contatti p.contatti-testo{max-width:1040px;text-align:justify;hyphens:auto;-webkit-hyphens:auto;text-align-last:center}
 .canali{list-style:none;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:22px}
 .canali a{display:flex;align-items:center;gap:12px;padding:12px 18px;border-radius:12px;border:1.5px solid rgba(255,255,255,.3);text-decoration:none;text-align:left;transition:background .2s}
 .canali a:hover{background:rgba(255,255,255,.1)}
@@ -620,8 +622,7 @@ var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.targe
     <div class="testo reveal">
       <p class="label">Su richiesta</p>
       <h2>La creazione di un nuovo cammino</h2>
-      <p>Il percorso non esiste ancora? Possiamo progettarlo con voi. Partiamo dalla vostra idea (un collegamento tra borghi, un itinerario tematico, un anello attorno al comune), studiamo il tracciato sulla carta e lo verifichiamo a piedi, censendo fondo, punti di interesse, servizi e i punti in cui servirà la segnaletica.</p>
-      <p>Consegniamo traccia GPS, mappa interattiva e relazione tecnica: la base per presentare il progetto e promuoverlo. Non è un prodotto a listino ma un'opzione da discutere insieme e da preventivare caso per caso.</p>
+      <p class="nuovo-testo">Il percorso non esiste ancora? Possiamo progettarlo con voi. Partiamo dalla vostra idea (un collegamento tra borghi, un itinerario tematico, un anello attorno al comune), studiamo il tracciato sulla carta e lo verifichiamo a piedi, censendo fondo, punti di interesse, servizi e i punti in cui servirà la segnaletica. Consegniamo traccia GPS, mappa interattiva e relazione tecnica: la base per presentare il progetto e promuoverlo.</p>
       <a class="btn top" href="#contatti">Parliamone</a>
     </div>
   </div>
@@ -646,8 +647,7 @@ var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.targe
   <div class="wrap reveal">
     <p class="label" style="color:var(--lago-l)">Contatti</p>
     <h2>Parliamo del vostro tracciato</h2>
-    <p>Bastano pochi minuti, anche online, per mostrare una mappa e una relazione completa e capire quale prodotto è più adatto al vostro percorso. Prezzi e condizioni sono nell'offerta completa: per riceverla basta lasciare il vostro indirizzo email con il pulsante «Offerta e prezzi».</p>
-    <p>Ci piace conoscere nuovi colleghi con cui condividere idee, sentieri e visioni: guide, accompagnatori, tecnici, chi cura o racconta un territorio. Crediamo nella collaborazione e siamo curiosi di ascoltare proposte da tutta Italia: possiamo lavorare ovunque ci sia un progetto.</p>
+    <p class="contatti-testo">Bastano pochi minuti, anche online, per mostrare una mappa e una relazione completa e capire quale prodotto è più adatto al vostro percorso. Prezzi e condizioni sono nell'offerta completa: per riceverla basta lasciare il vostro indirizzo email con il pulsante «Offerta e prezzi». Ci piace conoscere nuovi colleghi con cui condividere idee, sentieri e visioni: guide, accompagnatori, tecnici, chi cura o racconta un territorio.</p>
     <div class="azioni"><a class="btn top" id="scarica-apri-2" href="#contatti">Offerta e prezzi</a></div>
     <ul class="canali">
         <li><a href="https://wa.me/393496053981?text=Buongiorno%2C%20vorrei%20informazioni%20su%20Traccialog." target="_blank" rel="noopener">
