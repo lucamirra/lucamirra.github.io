@@ -13,6 +13,7 @@
 <meta property="og:title" content="Traccialog · Rilevamento e mappatura digitale di sentieri e cammini">
 <meta property="og:description" content="Segnavia, criticità e punti di interesse documentati con foto, video e coordinate GPS, in una mappa che si apre da qualsiasi browser.">
 <meta property="og:type" content="website">
+<link rel="canonical" href="https://lucamirra.it/traccialog/">
 <meta property="og:url" content="https://lucamirra.it/traccialog/">
 <meta property="og:image" content="https://lucamirra.it/traccialog/img/og-traccialog.jpg">
 <meta property="og:image:width" content="1200">
@@ -221,8 +222,8 @@ section{padding:72px 0}
 
 /* CHI */
 .chi{background:var(--neve)}
-.chi-box{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:center}
-.ritratto{width:300px;height:300px;-webkit-mask-image:radial-gradient(ellipse 58% 56% at 50% 44%,#000 58%,transparent 100%);mask-image:radial-gradient(ellipse 58% 56% at 50% 44%,#000 58%,transparent 100%)}
+.chi-box{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:center}
+.ritratto{width:280px;height:340px;border-radius:50%;overflow:hidden;box-shadow:0 16px 40px rgba(20,48,42,.18)}
 .ritratto img{width:100%;height:100%;object-fit:cover}
 .chi p{margin-top:12px;font-size:16.5px}
 .chi h2{display:flex;align-items:center;gap:12px}
@@ -310,7 +311,7 @@ footer a{color:#B9CBC4}
   .riga .et{display:block;font-family:var(--font-h);font-size:11.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:4px}
   .riga p.senza .et{color:#9A3B37}.riga p.con .et{color:#16716B}
   .chi-box{grid-template-columns:1fr;gap:24px;justify-items:start}
-  .ritratto{width:220px;height:220px}
+  .ritratto{width:200px;height:243px}
   .nuovo::after{background:linear-gradient(180deg,rgba(10,28,24,.72) 0%,rgba(10,28,24,.86) 100%)}
   .nuovo{padding:80px 0}
 }
@@ -497,13 +498,13 @@ var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.targe
           <ul>
             <li><span class="q pi" aria-hidden="true"></span><strong>Punti di interesse e vedute:</strong> ciascuno con foto, video e una descrizione scritta per il pubblico.</li>
             <li><span class="q rs" aria-hidden="true"></span><strong>Strutture ricettive</strong> lungo il percorso: posizione e riferimenti.</li>
-            <li><span class="q pi" aria-hidden="true"></span><strong>Servizi utili a chi cammina:</strong> punti acqua, aree di sosta, punti di ristoro.</li>
+            <li><span class="q pi" aria-hidden="true"></span><strong>Servizi utili a chi cammina:</strong> punti acqua, bivi, aree di sosta, punti di ristoro.</li>
           </ul>
           <h4>Cosa ricevete</h4>
           <ul>
             <li><span class="q doc" aria-hidden="true"></span><strong>Una seconda mappa interattiva,</strong> diversa da quella tecnica: niente segnavia né criticità, solo ciò che serve a chi cammina.</li>
             <li><span class="q doc" aria-hidden="true"></span><strong>Versione web, pensata per il telefono:</strong> la pubblicate sul vostro sito e la condividete con un link, via email, WhatsApp o con un QR code lungo il percorso. Si apre subito anche con la connessione dati: foto e video si caricano solo quando si tocca un punto.</li>
-            <li><span class="q doc" aria-hidden="true"></span><strong>Traccia della tappa e profilo altimetrico</strong> colorato per pendenza, con distanza e dislivello.</li>
+            <li><span class="q doc" aria-hidden="true"></span><strong>Traccia della tappa e profilo altimetrico</strong> colorato per pendenza, con distanza, dislivello, difficoltà e tempo di percorrenza.</li>
           </ul>
           <h4>A cosa serve</h4>
           <p class="serve">Alle escursioni dei vostri clienti: scegliere il cammino, preparare la tappa, seguire il tracciato, sapere cosa vedere, dove sono i punti acqua e dove dormire. E a dare visibilità alle strutture del territorio.</p>
@@ -638,6 +639,7 @@ var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.targe
       <p>Mi chiamo Luca Mirra e lavoro a Torino. Vengo da oltre 25 anni di operations, logistica e gestione dei processi in aziende come DHL, Amazon, CEVA e KN: organizzare il lavoro sul campo, misurarlo e trasformarlo in dati utili è il mio mestiere.</p>
       <p>In ambito escursionistico ho una formazione CAI, sono Tecnico di Orientamento e istruttore di Nordic Walking. Sto completando il percorso da Guida Ambientale Escursionistica.</p>
       <p>Traccialog unisce le mie esperienze: un rilevamento sul campo fatto da chi cammina, restituito con il rigore di un processo operativo.</p>
+      <p><a href="/outdoor/" style="color:var(--lago);font-weight:700">Le mie attività outdoor e di Nordic Walking →</a></p>
     </div>
   </div>
 </section>
@@ -647,7 +649,7 @@ var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.targe
   <div class="wrap reveal">
     <p class="label" style="color:var(--lago-l)">Contatti</p>
     <h2>Parliamo del vostro tracciato</h2>
-    <p class="contatti-testo">Bastano pochi minuti, anche online, per mostrare una mappa e una relazione completa e capire quale prodotto è più adatto al vostro percorso. Prezzi e condizioni sono nell'offerta completa: per riceverla basta lasciare il vostro indirizzo email con il pulsante «Offerta e prezzi». Ci piace conoscere nuovi colleghi con cui condividere idee, sentieri e visioni: guide, accompagnatori, tecnici, chi cura o racconta un territorio.</p>
+    <p class="contatti-testo">Bastano pochi minuti, anche online, per mostrare una mappa e una relazione completa e capire quale prodotto è più adatto al vostro percorso. Prezzi e condizioni sono nell'offerta completa: per riceverla basta lasciare il vostro indirizzo email con il pulsante «Offerta e prezzi». Ci piace conoscere nuovi colleghi con cui condividere idee, sentieri e visioni: guide, accompagnatori, tecnici.</p>
     <div class="azioni"><a class="btn top" id="scarica-apri-2" href="#contatti">Offerta e prezzi</a></div>
     <ul class="canali">
         <li><a href="https://wa.me/393496053981?text=Buongiorno%2C%20vorrei%20informazioni%20su%20Traccialog." target="_blank" rel="noopener">
@@ -668,7 +670,8 @@ var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.targe
   <div class="wrap">
     <p>© 2026 Luca Mirra, Torino. Traccialog è un servizio di rilevamento e mappatura digitale di sentieri e cammini.</p>
     <p>Cartografia nelle schermate di esempio: dati © OpenStreetMap contributors, SRTM; stile © OpenTopoMap (CC-BY-SA).</p>
-    <p><a href="https://lucamirra.it/traccialog/privacy.html">Privacy</a> · <a href="https://lucamirra.it/traccialog/termini.html">Termini e condizioni</a> · <button type="button" class="preferenze" id="cookie-preferenze">Preferenze cookie</button></p>
+    <p><a href="https://lucamirra.it/traccialog/privacy">Privacy</a> · <a href="https://lucamirra.it/traccialog/termini">Termini e condizioni</a> · <button type="button" class="preferenze" id="cookie-preferenze">Preferenze cookie</button></p>
+    <p>Altri progetti: <a href="/outdoor/">Luca Mirra Outdoor e Nordic Walking</a> · <a href="/">Luca Mirra · Specialista di Processo AI</a> · <a href="/ai-per-professionisti/">AI per Professionisti · i manuali</a></p>
   </div>
 </footer>
 

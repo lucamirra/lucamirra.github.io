@@ -266,6 +266,28 @@ footer a{color:#B9CBC4}
 
 
 
+/* AGRICAMPUS */
+.agri{background:#F3EEE5}
+.agri .label{color:#A0662A}
+.agri h2 sup,.agri p sup{font-size:.45em;vertical-align:super}
+.agri-claim{font-family:var(--font-s);font-style:italic;font-size:clamp(18px,2.2vw,22px);color:var(--bosco-m);margin:-6px 0 14px}
+.agri .sub{max-width:860px}
+.agri-foto{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:230px 230px;grid-template-areas:'a a b b' 'a a c d';gap:14px;margin-top:34px}
+.agri-foto .foto{position:relative;box-shadow:0 10px 30px rgba(20,48,42,.14)}
+.agri-foto video{width:100%;height:100%;object-fit:cover;display:block}
+.af-gruppo{grid-area:a}.af-video{grid-area:b}.af-guide{grid-area:c}.af-festa1{grid-area:d}
+.agri-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:34px;align-items:stretch}
+.agri-card{background:#fff;border:1px solid #E6DCCB;border-top:4px solid var(--ocra);border-radius:var(--r);padding:26px 24px;display:flex;flex-direction:column}
+.agri-card h3{font-family:var(--font-h);font-size:20px;line-height:1.25;color:var(--bosco);margin:4px 0 10px}
+.agri-card p{font-size:15.5px}
+.agri-card .elenco{margin-top:8px}
+.agri-card .btn{margin-top:auto;align-self:flex-start}
+.agri-card .elenco+.btn{margin-top:22px}
+.agri-card{padding:30px 32px}
+.agri-k{font-family:var(--font-h);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#9A6411}
+.agri-stagione{margin-top:14px;font-family:var(--font-h);font-weight:700;font-size:14px;color:var(--bosco)}
+footer .altri{margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);justify-content:flex-start;gap:6px;font-size:12.5px}
+
 /* fauna in trasparenza */
 .fauna{position:relative;overflow:hidden}
 .fauna>.wrap{position:relative;z-index:1}
@@ -295,6 +317,8 @@ footer a{color:#B9CBC4}
   .or-gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
   .nw-media{margin:0 auto}
   .tl-grid{grid-template-columns:1fr}
+  .agri-grid{grid-template-columns:1fr}
+  .agri-foto{grid-template-columns:1fr 1fr;grid-template-rows:240px 180px 200px;grid-template-areas:'a a' 'b b' 'c d'}
   .racconto .colonne{grid-template-columns:1fr;gap:14px}
   .split,.tl-box{grid-template-columns:1fr;gap:32px}
   .split.inv .testo{order:0}
@@ -413,23 +437,84 @@ footer a{color:#B9CBC4}
   </div>
 </section>
 
-<!-- RACCONTO -->
-<section class="racconto" aria-label="La mia storia">
-  <img src="img/laghetto-riflessi.jpg" alt="" loading="lazy">
+<!-- SEPARATORE NEBBIA -->
+<div class="separatore" aria-hidden="true"><img src="img/rododendri-nebbia.jpg" alt="" loading="lazy"></div>
+
+<!-- AGRICAMPUS DEL CAMMINO -->
+<section class="agri" id="attivita">
   <div class="wrap">
-    <blockquote class="reveal">
-      <span class="apertura">«Tu sei matto.»</span>
-      <div class="colonne giust">
-        <div>
-        <p>Sento ancora le parole di mia madre. Le avevo appena detto che sarei tornato su quel sentiero della mia infanzia, quello che saliva in quota e che nessuno percorreva più da decenni. La vegetazione l'aveva quasi cancellato.</p>
-        <p>Il sentiero spariva spesso, e ogni volta andava ritrovato: usando le mani, le ginocchia e soprattutto la testa. Lassù ho capito che anche la mia strada, per anni, era rimasta sepolta.</p>
-        </div>
-        <div>
-        <p>Oggi accompagno le persone come istruttore di Nordic Walking e operatore di cammino. E a marzo 2027 sarò Guida Ambientale Escursionistica. Il mestiere è sempre lo stesso: ritrovare il sentiero quando sembra che non ci sia più.</p>
-        <p>Mia madre aveva ragione a metà: ero matto, ma sapevo dove stavo andando.</p>
-        </div>
+    <div class="reveal agri-testa">
+      <p class="label">Collaborazione · Pecetto Torinese</p>
+      <h2>AgriCampus del Cammino<sup>®</sup> delle Colline Torinesi</h2>
+      <p class="agri-claim">Il punto d'incontro tra cammino, natura ed eccellenze del territorio.</p>
+      <p class="sub giust">Collaboro con l'AgriCampus del Cammino<sup>®</sup>, nato dall'unione tra la Cooperativa Agricola AgricooPecetto e l'ASD Nordic Walking Andrate, la prima scuola di Nordic Walking in Italia. La sede è a Pecetto Torinese, nella Collina Po Riserva MaB UNESCO, lungo lo storico Cammino Don Bosco.</p>
+    </div>
+    <div class="agri-foto reveal">
+      <figure class="foto af-gruppo"><img src="img/agricampus-gruppo-lago.jpg" width="1400" height="682" alt="Gruppo di escursionisti in sosta su un crinale sopra un lago, la guida indica il panorama" loading="lazy"></figure>
+      <figure class="foto af-video"><video src="img/agricampus-video.mp4" muted loop playsinline preload="metadata" aria-label="Video: torrente e cascata tra le rocce di una forra di montagna"></video></figure>
+      <figure class="foto af-guide"><img src="img/agricampus-guide.jpg" width="1123" height="944" alt="Luca Mirra con un compagno di escursione in quota, montagne sullo sfondo" loading="lazy" style="object-position:center 30%"></figure>
+      <figure class="foto af-festa1"><img src="img/agricampus-basilica.jpg" width="1200" height="901" alt="La Basilica di San Giovanni Bosco al Colle Don Bosco, lungo il Cammino Don Bosco" loading="lazy" style="object-position:center 35%"></figure>
+    </div>
+    <div class="agri-grid reveal">
+      <article class="agri-card">
+        <p class="agri-k">Ogni fine settimana</p>
+        <h3>Escursioni, camminate e attività continuative</h3>
+        <p>Il sabato e la domenica escursioni su misura: dai rilievi alpini delle province di Torino e Biella ai panorami collinari, fino ai sentieri di pianura. Ogni uscita unisce il cammino alla scoperta dei paesaggi, della cultura locale e dei sapori autentici.</p>
+        <p class="agri-stagione">Le uscite</p>
+        <ul class="elenco">
+          <li>Escursioni di una giornata</li>
+          <li>Camminate itineranti a tappe</li>
+          <li>Camminate legate alle feste del territorio</li>
+        </ul>
+        <p class="agri-stagione">Le attività continuative</p>
+        <ul class="elenco">
+          <li>Trekking a tappe lungo il Cammino Don Bosco</li>
+          <li>Corsi di Nordic Walking per tutti i livelli, con istruttori qualificati</li>
+          <li>Gruppi di cammino settimanali</li>
+        </ul>
+        <a class="btn" href="https://wa.me/393496053981?text=Ciao%20Luca%2C%20vorrei%20informazioni%20sulle%20escursioni%20dell%27AgriCampus%20del%20Cammino">Partecipa a un'escursione</a>
+      </article>
+      <article class="agri-card">
+        <p class="agri-k">Tutto l'anno</p>
+        <h3>Le feste del territorio</h3>
+        <p>Le uscite seguono il ritmo delle stagioni e le tradizioni enogastronomiche piemontesi. Qualche esempio:</p>
+        <p class="agri-stagione">Primavera ed estate</p>
+        <ul class="elenco">
+          <li>Cherry Festival a Pecetto Torinese</li>
+          <li>Sagra dell'Asparago a Santena</li>
+          <li>Sagra del Pomodoro Costoluto a Cambiano</li>
+          <li>Di Freisa in Freisa a Chieri</li>
+        </ul>
+        <p class="agri-stagione">Autunno e inverno</p>
+        <ul class="elenco">
+          <li>Fiera di San Martino e Sagra del Cardo</li>
+          <li>Festa della Polenta ad Andrate</li>
+          <li>Fiera della Toma a Condove</li>
+          <li>Tuttomele e Festa delle Castagne</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- NORDIC WALKING -->
+<section id="nordic-walking" class="fauna fa-sx" style="--fa:url('img/fauna-aquila.jpg');--fo:0.16">
+  <div class="wrap split nw-split">
+    <div class="testo reveal">
+      <p class="label">Nordic Walking</p>
+      <h2>Nordic Walking a Torino e dintorni.</h2>
+      <p>Conduco allenamenti e corsi di Nordic Walking, anche al Parco della Pellerina di Torino. Una camminata con i bastoncini che coinvolge braccia, tronco e gambe, migliora postura ed equilibrio e riduce l'impatto sulle articolazioni. È adatta a tutte le età: non serve esperienza.</p>
+      <div class="asd-box">
+        <p class="asd-k">Per associazioni e ASD</p>
+        <p class="asd-t">Cercate un istruttore di Nordic Walking?</p>
+        <p>Collaboro con le associazioni sportive che hanno bisogno di un istruttore qualificato: allenamenti periodici, corsi base, uscite di gruppo e giornate dedicate. Se la vostra ASD ha bisogno di una mano, scrivetemi: sarò felice di parlarne.</p>
+        <a class="btn" href="https://wa.me/393496053981?text=Ciao%20Luca%2C%20scrivo%20per%20conto%20di%20un%27associazione%20sportiva%20interessata%20al%20Nordic%20Walking">Contattami per una collaborazione</a>
       </div>
-    </blockquote>
+    </div>
+    <div class="nw-media reveal">
+      <a class="foto nw-loc" href="img/locandina-pellerina.jpg" target="_blank" rel="noopener"><img src="img/locandina-pellerina.jpg" alt="Locandina: Nordic Walking a Torino, Parco Pellerina" loading="lazy"></a>
+    </div>
   </div>
 </section>
 
@@ -459,6 +544,25 @@ footer a{color:#B9CBC4}
 
 </section>
 
+<!-- GRUPPI -->
+<section class="fauna fa-dx" style="--fa:url('img/fauna-ululato.jpg');--fo:0.18">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="label">In gruppo</p>
+      <h2>Le montagne si salgono meglio in compagnia.</h2>
+      <p class="sub">Gruppi piccoli e grandi, uscite di una giornata e traversate: ogni volta la stessa attenzione al ritmo, alla sicurezza e alle persone.</p>
+    </div>
+    <div class="gruppi-grid reveal">
+      <figure class="foto g1"><img src="img/gruppo-vetta.jpg" alt="Gruppo numeroso in vetta, con un mare di montagne alle spalle" loading="lazy"></figure>
+      <figure class="foto g2"><img src="img/gruppo-cresta.jpg" alt="Gruppo in cresta con i bastoncini alzati verso il cielo" loading="lazy"></figure>
+      <figure class="foto g3"><img src="img/lago-pascolo.jpg" alt="Lago alpino verde con le mucche al pascolo" loading="lazy"></figure>
+      <figure class="foto g4"><img src="img/gruppo-rifugio.jpg" alt="Gruppo di escursionisti davanti a un rifugio di pietra" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+
+
 <!-- SURVIVAL -->
 <section class="survival">
   <div class="wrap">
@@ -481,48 +585,6 @@ footer a{color:#B9CBC4}
       <h3>Una giornata al Salgari Campus</h3>
       <p>Organizzo giornate all'eco-campus della Valle di Reaglie, certificato per gli sport ecodinamici: ponti sospesi tibetano e thailandese, il Labirinto Vietnamita, percorsi di equilibrio e coordinazione, riparo e fuoco, e un anello nel bosco di querce e carpini per riconoscere gli alberi. Per scuole, gruppi e team.</p>
       <a class="btn" href="https://wa.me/393496053981?text=Ciao%20Luca%2C%20vorrei%20informazioni%20su%20una%20giornata%20al%20Salgari%20Campus">Informazioni</a>
-    </div>
-  </div>
-</section>
-
-<!-- GRUPPI -->
-<section class="fauna fa-dx" style="--fa:url('img/fauna-ululato.jpg');--fo:0.18">
-  <div class="wrap">
-    <div class="reveal">
-      <p class="label">In gruppo</p>
-      <h2>Le montagne si salgono meglio in compagnia.</h2>
-      <p class="sub">Gruppi piccoli e grandi, uscite di una giornata e traversate: ogni volta la stessa attenzione al ritmo, alla sicurezza e alle persone.</p>
-    </div>
-    <div class="gruppi-grid reveal">
-      <figure class="foto g1"><img src="img/gruppo-vetta.jpg" alt="Gruppo numeroso in vetta, con un mare di montagne alle spalle" loading="lazy"></figure>
-      <figure class="foto g2"><img src="img/gruppo-cresta.jpg" alt="Gruppo in cresta con i bastoncini alzati verso il cielo" loading="lazy"></figure>
-      <figure class="foto g3"><img src="img/lago-pascolo.jpg" alt="Lago alpino verde con le mucche al pascolo" loading="lazy"></figure>
-      <figure class="foto g4"><img src="img/gruppo-rifugio.jpg" alt="Gruppo di escursionisti davanti a un rifugio di pietra" loading="lazy"></figure>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- SEPARATORE NEBBIA -->
-<div class="separatore" aria-hidden="true"><img src="img/rododendri-nebbia.jpg" alt="" loading="lazy"></div>
-
-<!-- NORDIC WALKING -->
-<section id="attivita" class="fauna fa-sx" style="--fa:url('img/fauna-aquila.jpg');--fo:0.16">
-  <div class="wrap split nw-split">
-    <div class="testo reveal">
-      <p class="label">Nordic Walking</p>
-      <h2>Nordic Walking a Torino e dintorni.</h2>
-      <p>Conduco allenamenti e corsi di Nordic Walking, anche al Parco della Pellerina di Torino. Una camminata con i bastoncini che coinvolge braccia, tronco e gambe, migliora postura ed equilibrio e riduce l'impatto sulle articolazioni. È adatta a tutte le età: non serve esperienza.</p>
-      <div class="asd-box">
-        <p class="asd-k">Per associazioni e ASD</p>
-        <p class="asd-t">Cercate un istruttore di Nordic Walking?</p>
-        <p>Collaboro con le associazioni sportive che hanno bisogno di un istruttore qualificato: allenamenti periodici, corsi base, uscite di gruppo e giornate dedicate. Se la vostra ASD ha bisogno di una mano, scrivetemi: sarò felice di parlarne.</p>
-        <a class="btn" href="https://wa.me/393496053981?text=Ciao%20Luca%2C%20scrivo%20per%20conto%20di%20un%27associazione%20sportiva%20interessata%20al%20Nordic%20Walking">Contattami per una collaborazione</a>
-      </div>
-    </div>
-    <div class="nw-media reveal">
-      <a class="foto nw-loc" href="img/locandina-pellerina.jpg" target="_blank" rel="noopener"><img src="img/locandina-pellerina.jpg" alt="Locandina: Nordic Walking a Torino, Parco Pellerina" loading="lazy"></a>
     </div>
   </div>
 </section>
@@ -573,7 +635,7 @@ footer a{color:#B9CBC4}
     <img class="contatti-foto" src="img/luca-contatti-v2.jpg" width="500" height="500" alt="Luca Mirra nel bosco, con lo zaino" loading="lazy">
     <div class="contatti-testo">
     <p class="label" style="color:var(--lago-l)">Contatti</p>
-    <h2>Stiamo organizzando la prossima escursione</h2>
+    <h2>Unisciti alla prossima avventura</h2>
     <p class="sub">Corsi di Nordic Walking, Giornate di orientamento, Survival, Escursioni in collina e in montagna.</p>
     <div class="azioni">
       <a class="btn mail" href="mailto:info@lucamirra.it?subject=Attivit%C3%A0%20outdoor">info@lucamirra.it</a>
@@ -586,13 +648,14 @@ footer a{color:#B9CBC4}
 <footer>
   <div class="wrap">
     <span>© 2026 Luca Mirra · Torino</span>
-    <span><a href="privacy.html">Privacy</a> · <a href="termini.html">Termini e condizioni</a> · <a href="#cookie" id="apri-cookie">Preferenze cookie</a></span>
+    <span><a href="privacy">Privacy</a> · <a href="termini">Termini e condizioni</a> · <a href="#cookie" id="apri-cookie">Preferenze cookie</a></span>
   </div>
+  <nav class="wrap altri" aria-label="Altri progetti di Luca Mirra"><span>Altri progetti:</span> <a href="/traccialog/">Traccialog · mappatura di sentieri</a> · <a href="/">Luca Mirra · Specialista di Processo AI</a> · <a href="/ai-per-professionisti/">AI per Professionisti · i manuali</a></nav>
 </footer>
 
 <!-- BANNER COOKIE -->
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Preferenze sui cookie" hidden>
-  <p>Questo sito usa cookie tecnici e, solo se acconsenti, Google Analytics per contare le visite in forma aggregata. Nessuna profilazione pubblicitaria. Dettagli nella pagina <a href="privacy.html">Privacy e cookie</a>.</p>
+  <p>Questo sito usa cookie tecnici e, solo se acconsenti, Google Analytics per contare le visite in forma aggregata. Nessuna profilazione pubblicitaria. Dettagli nella pagina <a href="privacy">Privacy e cookie</a>.</p>
   <div class="cookie-azioni">
     <button type="button" id="cookie-no">Rifiuta</button>
     <button type="button" id="cookie-si">Accetta</button>
@@ -629,7 +692,7 @@ footer a{color:#B9CBC4}
 const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 const vo=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){v.play().catch(()=>{})}else{v.pause()}}),{threshold:.25});
-document.querySelectorAll('.gal video,.orient-media video').forEach(v=>vo.observe(v));
+document.querySelectorAll('.gal video,.orient-media video,.agri-foto video').forEach(v=>vo.observe(v));
 </script>
 </body>
 </html>
